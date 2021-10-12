@@ -35,7 +35,7 @@ export default function NavBar() {
                 <div className="navbar-container container">
                     <Link to='/' className="navbar-logo" onClick={closeMobileMenu}>
                         <FaWineBottle className="navbar-icon"/>
-                        fæl
+                        whatdoidrinktonight
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
                         {click ? <FaTimes /> : <FaBars/>}
@@ -59,7 +59,7 @@ export default function NavBar() {
                                 <Link to="/sign-up" className="btn-link">
                                     <Button buttonStyle = 'btn--outline'
                                     buttonSize = 'btn--mobile'>
-                                        SIGN UP</Button>
+                                        Random!</Button>
                                 </Link>
                             )
                         }

@@ -29,6 +29,12 @@
   font-size: 1rem;
 }
 
+.btn--large {
+  margin: auto;
+  padding: 30px;
+  font-weight: 900;
+}
+
 .btn--mobile {
   text-align: center;
   border-radius: 4px;
