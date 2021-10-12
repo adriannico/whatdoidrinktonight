@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/whmatdoidrinktonight/static/css/main.3370a582.chunk.css",
-    "main.js": "/whmatdoidrinktonight/static/js/main.a1417981.chunk.js",
-    "main.js.map": "/whmatdoidrinktonight/static/js/main.a1417981.chunk.js.map",
+    "main.css": "/whmatdoidrinktonight/static/css/main.0a6a4486.chunk.css",
+    "main.js": "/whmatdoidrinktonight/static/js/main.afdeba33.chunk.js",
+    "main.js.map": "/whmatdoidrinktonight/static/js/main.afdeba33.chunk.js.map",
     "runtime-main.js": "/whmatdoidrinktonight/static/js/runtime-main.3a8bee3a.js",
     "runtime-main.js.map": "/whmatdoidrinktonight/static/js/runtime-main.3a8bee3a.js.map",
     "static/js/2.8d24a2c3.chunk.js": "/whmatdoidrinktonight/static/js/2.8d24a2c3.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.928b24f6.chunk.js": "/whmatdoidrinktonight/static/js/3.928b24f6.chunk.js",
     "static/js/3.928b24f6.chunk.js.map": "/whmatdoidrinktonight/static/js/3.928b24f6.chunk.js.map",
     "index.html": "/whmatdoidrinktonight/index.html",
-    "static/css/main.3370a582.chunk.css.map": "/whmatdoidrinktonight/static/css/main.3370a582.chunk.css.map",
+    "static/css/main.0a6a4486.chunk.css.map": "/whmatdoidrinktonight/static/css/main.0a6a4486.chunk.css.map",
     "static/js/2.8d24a2c3.chunk.js.LICENSE.txt": "/whmatdoidrinktonight/static/js/2.8d24a2c3.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/whmatdoidrinktonight/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.3a8bee3a.js",
     "static/js/2.8d24a2c3.chunk.js",
-    "static/css/main.3370a582.chunk.css",
-    "static/js/main.a1417981.chunk.js"
+    "static/css/main.0a6a4486.chunk.css",
+    "static/js/main.afdeba33.chunk.js"
   ]
 }
