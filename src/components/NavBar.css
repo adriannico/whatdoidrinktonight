@@ -10,6 +10,7 @@
   z-index: 999;
   transition: all 0.2s ease;
   font-weight: 600;
+  padding: 30px;
 }
 
 .navbar-container {
