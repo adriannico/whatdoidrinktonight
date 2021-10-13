@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/whatdoidrinktonight/static/css/main.becd5066.chunk.css",
-    "main.js": "/whatdoidrinktonight/static/js/main.400ce647.chunk.js",
-    "main.js.map": "/whatdoidrinktonight/static/js/main.400ce647.chunk.js.map",
+    "main.js": "/whatdoidrinktonight/static/js/main.767120f7.chunk.js",
+    "main.js.map": "/whatdoidrinktonight/static/js/main.767120f7.chunk.js.map",
     "runtime-main.js": "/whatdoidrinktonight/static/js/runtime-main.18aa46b1.js",
     "runtime-main.js.map": "/whatdoidrinktonight/static/js/runtime-main.18aa46b1.js.map",
     "static/js/2.abf8021f.chunk.js": "/whatdoidrinktonight/static/js/2.abf8021f.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.18aa46b1.js",
     "static/js/2.abf8021f.chunk.js",
     "static/css/main.becd5066.chunk.css",
-    "static/js/main.400ce647.chunk.js"
+    "static/js/main.767120f7.chunk.js"
   ]
 }
