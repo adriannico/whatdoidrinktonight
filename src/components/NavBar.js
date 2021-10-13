@@ -6,6 +6,7 @@ import "./NavBar.css"
 import { IconContext } from "react-icons/lib"
 import About from "./pages/HomePage/About"
 import Random from "./pages/HomePage/Random"
+import Home from "./pages/HomePage/Home"
 import getRandomDrink from "./pages/HomePage/Random"
 
 
@@ -35,7 +36,7 @@ export default function NavBar() {
         <IconContext.Provider value={{ color: '#fff'}}>
             <div className="navbar">
                 <div className="navbar-container container">
-                    <Link to='/' className="navbar-logo" onClick={closeMobileMenu}>
+                    <Link to='/Home' className="navbar-logo" onClick={closeMobileMenu}>
                         <FaWineBottle className="navbar-icon"/>
                         wdidt
                     </Link>
@@ -44,13 +45,13 @@ export default function NavBar() {
                     </div>
                     <ul className = {click ? 'nav-menu active' : 'nav-menu'}>
                         <li className="nav-item" onClick={handleClick}>
-                            <Link to='/Random' className="nav-links" onClick={closeMobileMenu}>Hjem</Link>
+                            <Link to='/Home' className="nav-links" onClick={closeMobileMenu}>Home</Link>
                         </li>
                         <li className="nav-item" onClick={handleClick}>
                             <Link to='/About' className="nav-links" onClick={closeMobileMenu}>About</Link>
                         </li>
                         <li className="nav-item" onClick={handleClick}>
-                            <Link to='wwww.oglarna.com' className="nav-links" onClick={closeMobileMenu}>Sheesh</Link>
+                            <Link to='/Search' className="nav-links" onClick={closeMobileMenu}>Search</Link>
                         </li>
                         <li className="nav-btn">
                             {button ? (
@@ -58,7 +59,7 @@ export default function NavBar() {
                                     <Button buttonStyle='btn-outline'>Random!</Button>
                                 </Link>
                             ): (
-                                <Link to="/sign-up" className="btn-link">
+                                <Link to="/Random" className="btn-link">
                                     <Button onClick={getRandomDrink} buttonStyle = 'btn--outline'
                                     buttonSize = 'btn--mobile'>
                                         Random!</Button>

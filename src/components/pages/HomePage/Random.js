@@ -22,6 +22,8 @@ function Random() {
     const [drinkIng8, setDrinkIng8] = useState("");
     const [drinkIng9, setDrinkIng9] = useState("");
     const [drinkIng10, setDrinkIng10] = useState("");
+    const [drinkIng11, setDrinkIng11] = useState("");
+    const [drinkIng12, setDrinkIng12] = useState("");
 
     // MEASURES OF EACH INGREDIENT
 
@@ -35,6 +37,8 @@ function Random() {
     const [drinkMs8, setDrinkMs8] = useState("");
     const [drinkMs9, setDrinkMs9] = useState("");
     const [drinkMs10, setDrinkMs10] = useState("");
+    const [drinkMs11, setDrinkMs11] = useState("");
+    const [drinkMs12, setDrinkMs12] = useState("");
 
     
 
@@ -58,6 +62,8 @@ function Random() {
             setDrinkIng8(response.data.drinks[0].strIngredient8)
             setDrinkIng9(response.data.drinks[0].strIngredient9)
             setDrinkIng10(response.data.drinks[0].strIngredient10)
+            setDrinkIng11(response.data.drinks[0].strIngredient11)
+            setDrinkIng12(response.data.drinks[0].strIngredient12)
             // MEASUREMENT
             setDrinkMs1(response.data.drinks[0].strMeasure1)
             setDrinkMs2(response.data.drinks[0].strMeasure2)
@@ -69,6 +75,8 @@ function Random() {
             setDrinkMs8(response.data.drinks[0].strMeasure8)
             setDrinkMs9(response.data.drinks[0].strMeasure9)
             setDrinkMs10(response.data.drinks[0].strMeasure10)
+            setDrinkMs11(response.data.drinks[0].strMeasure11)
+            setDrinkMs12(response.data.drinks[0].strMeasure12)
             
 
 
@@ -94,6 +102,8 @@ function Random() {
                         <h2>{drinkMs8} {drinkIng8}</h2>
                         <h2>{drinkMs9} {drinkIng9}</h2>
                         <h2>{drinkMs10} {drinkIng10}</h2>
+                        <h2>{drinkMs11} {drinkIng11}</h2>
+                        <h2>{drinkMs12} {drinkIng12}</h2>
                         <h3 className="instructions">{drinkIns}</h3>
                       
                 </div>
