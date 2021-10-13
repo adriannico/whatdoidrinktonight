@@ -100,8 +100,8 @@ function Random() {
                 <div className="grid-item">
                 <img className="thumbnail" src={drinkImg}/>
                 </div>
-                <div className="grid-item">
-                <button className="randomButton" buttonStyle="btn--large" onClick={getRandomDrink}>Trykk for drink!</button> 
+                <div className="grid-item buttondiv">
+                    <button className="randomButton" buttonStyle="btn--large" onClick={getRandomDrink}>Trykk for drink!</button> 
                 </div>
                 
             

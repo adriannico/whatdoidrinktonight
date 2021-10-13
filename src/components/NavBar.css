@@ -106,7 +106,7 @@
   }
 
   .nav-menu.active {
-    background: #202020;
+    background: var(--background-secondary);
     left: 0;
     opacity: 1;
     transition: all 0.3s ease;

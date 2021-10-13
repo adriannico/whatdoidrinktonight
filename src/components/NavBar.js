@@ -6,6 +6,8 @@ import "./NavBar.css"
 import { IconContext } from "react-icons/lib"
 import About from "./pages/HomePage/About"
 import Random from "./pages/HomePage/Random"
+import getRandomDrink from "./pages/HomePage/Random"
+
 
 
 export default function NavBar() {
@@ -35,7 +37,7 @@ export default function NavBar() {
                 <div className="navbar-container container">
                     <Link to='/' className="navbar-logo" onClick={closeMobileMenu}>
                         <FaWineBottle className="navbar-icon"/>
-                        whatdoidrinktonight
+                        wdidt
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
                         {click ? <FaTimes /> : <FaBars/>}
@@ -48,7 +50,7 @@ export default function NavBar() {
                             <Link to='/About' className="nav-links" onClick={closeMobileMenu}>About</Link>
                         </li>
                         <li className="nav-item" onClick={handleClick}>
-                            <Link to='/' className="nav-links" onClick={closeMobileMenu}>Sheesh</Link>
+                            <Link to='wwww.oglarna.com' className="nav-links" onClick={closeMobileMenu}>Sheesh</Link>
                         </li>
                         <li className="nav-btn">
                             {button ? (
@@ -57,7 +59,7 @@ export default function NavBar() {
                                 </Link>
                             ): (
                                 <Link to="/sign-up" className="btn-link">
-                                    <Button buttonStyle = 'btn--outline'
+                                    <Button onClick={getRandomDrink} buttonStyle = 'btn--outline'
                                     buttonSize = 'btn--mobile'>
                                         Random!</Button>
                                 </Link>

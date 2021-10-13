@@ -40,7 +40,7 @@
 .page {
   align-items: center;
   background-color: var(--background-secondary);
-  padding: 10px;
+  padding: 30px;
   margin: 30px 70px;
   border-radius: 6px;
   box-shadow: rgb(32, 32, 32) 0px 2px;
@@ -52,4 +52,13 @@
 .page h2 {
   font-weight: 400;
   font-size: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .page {
+    width: 90vw;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+  }
 }
