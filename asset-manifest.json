@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/whmatdoidrinktonight/static/css/main.f625fb99.chunk.css",
-    "main.js": "/whmatdoidrinktonight/static/js/main.16e7966a.chunk.js",
-    "main.js.map": "/whmatdoidrinktonight/static/js/main.16e7966a.chunk.js.map",
-    "runtime-main.js": "/whmatdoidrinktonight/static/js/runtime-main.3a8bee3a.js",
-    "runtime-main.js.map": "/whmatdoidrinktonight/static/js/runtime-main.3a8bee3a.js.map",
-    "static/js/2.8d24a2c3.chunk.js": "/whmatdoidrinktonight/static/js/2.8d24a2c3.chunk.js",
-    "static/js/2.8d24a2c3.chunk.js.map": "/whmatdoidrinktonight/static/js/2.8d24a2c3.chunk.js.map",
-    "static/js/3.928b24f6.chunk.js": "/whmatdoidrinktonight/static/js/3.928b24f6.chunk.js",
-    "static/js/3.928b24f6.chunk.js.map": "/whmatdoidrinktonight/static/js/3.928b24f6.chunk.js.map",
-    "index.html": "/whmatdoidrinktonight/index.html",
-    "static/css/main.f625fb99.chunk.css.map": "/whmatdoidrinktonight/static/css/main.f625fb99.chunk.css.map",
-    "static/js/2.8d24a2c3.chunk.js.LICENSE.txt": "/whmatdoidrinktonight/static/js/2.8d24a2c3.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/whmatdoidrinktonight/static/media/logo.6ce24c58.svg"
+    "main.css": "/whatdoidrinktonight/static/css/main.f625fb99.chunk.css",
+    "main.js": "/whatdoidrinktonight/static/js/main.16e7966a.chunk.js",
+    "main.js.map": "/whatdoidrinktonight/static/js/main.16e7966a.chunk.js.map",
+    "runtime-main.js": "/whatdoidrinktonight/static/js/runtime-main.18aa46b1.js",
+    "runtime-main.js.map": "/whatdoidrinktonight/static/js/runtime-main.18aa46b1.js.map",
+    "static/js/2.8d24a2c3.chunk.js": "/whatdoidrinktonight/static/js/2.8d24a2c3.chunk.js",
+    "static/js/2.8d24a2c3.chunk.js.map": "/whatdoidrinktonight/static/js/2.8d24a2c3.chunk.js.map",
+    "static/js/3.928b24f6.chunk.js": "/whatdoidrinktonight/static/js/3.928b24f6.chunk.js",
+    "static/js/3.928b24f6.chunk.js.map": "/whatdoidrinktonight/static/js/3.928b24f6.chunk.js.map",
+    "index.html": "/whatdoidrinktonight/index.html",
+    "static/css/main.f625fb99.chunk.css.map": "/whatdoidrinktonight/static/css/main.f625fb99.chunk.css.map",
+    "static/js/2.8d24a2c3.chunk.js.LICENSE.txt": "/whatdoidrinktonight/static/js/2.8d24a2c3.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/whatdoidrinktonight/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.3a8bee3a.js",
+    "static/js/runtime-main.18aa46b1.js",
     "static/js/2.8d24a2c3.chunk.js",
     "static/css/main.f625fb99.chunk.css",
     "static/js/main.16e7966a.chunk.js"
