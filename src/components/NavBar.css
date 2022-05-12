@@ -60,7 +60,6 @@
 .nav-item:hover {
   transition: all 0.2s ease;
   border-bottom: 2px solid var(--primary);
-  filter: blur(0.5px);
 }
 
 .nav-links {

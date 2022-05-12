@@ -1,5 +1,5 @@
 
-import Axios from 'axios'
+    import Axios from 'axios'
 import React, { useEffect, useState } from "react";
 import "./Random.css"
 
@@ -91,7 +91,6 @@ function Random() {
             <div className="grid-container">
                 <div className="grid-item">
                     <h1><b>{drinkName}</b></h1>
-
                     <h2>{drinkMs1} {drinkIng1}</h2>
                         <h2>{drinkMs2} {drinkIng2}</h2>
                         <h2>{drinkMs3} {drinkIng3}</h2>
@@ -104,6 +103,7 @@ function Random() {
                         <h2>{drinkMs10} {drinkIng10}</h2>
                         <h2>{drinkMs11} {drinkIng11}</h2>
                         <h2>{drinkMs12} {drinkIng12}</h2>
+                        <hr></hr>
                         <h3 className="instructions">{drinkIns}</h3>
                       
                 </div>
@@ -111,12 +111,8 @@ function Random() {
                 <img className="thumbnail" src={drinkImg}/>
                 </div>
                 <div className="grid-item buttondiv">
-                    <button className="randomButton" buttonStyle="btn--large" onClick={getRandomDrink}>Trykk for drink!</button> 
+                    <button className="randomButton" buttonStyle="btn--large" onClick={getRandomDrink}>Click for a random drink!</button> 
                 </div>
-                
-            
-
-
 
 
             </div>

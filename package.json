@@ -1,6 +1,6 @@
 {
-  "homepage": "https://adriannico.github.io/whatdoidrinktonight",
-  "name": "my-app",
+  "homepage": "www.whatdoidrinktonight.com",
+  "name": "whatdoidrinktonight",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

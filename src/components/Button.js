@@ -20,3 +20,5 @@ export const Button = ({children, type , onClick, buttonStyle , buttonSize, butt
         </button>
     )
 }
+
+export default Button

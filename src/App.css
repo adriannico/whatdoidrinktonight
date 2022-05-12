@@ -61,4 +61,7 @@
     margin: auto;
     margin-top: 20px;
   }
+  .page h1 {
+    font-size: 1rem;
+  }
 }

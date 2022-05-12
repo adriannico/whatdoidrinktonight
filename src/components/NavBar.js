@@ -55,12 +55,12 @@ export default function NavBar() {
                         </li>
                         <li className="nav-btn">
                             {button ? (
-                                <Link to="/random" className="btn-link">
-                                    <Button buttonStyle='btn-outline'>Random!</Button>
+                                <Link to="/Random" className="btn-link">
+                                    <Button onClick={closeMobileMenu} buttonStyle='btn-outline'>Random!</Button>
                                 </Link>
                             ): (
                                 <Link to="/Random" className="btn-link">
-                                    <Button onClick={getRandomDrink} buttonStyle = 'btn--outline'
+                                    <Button onClick={closeMobileMenu} buttonStyle = 'btn--outline'
                                     buttonSize = 'btn--mobile'>
                                         Random!</Button>
                                 </Link>
