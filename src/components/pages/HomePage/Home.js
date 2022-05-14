@@ -8,12 +8,21 @@ function Home() {
                     <h1>
                         WhatDoIDrinkTonight.com
                     </h1>
-                    <p> Not sure what you´re drinking tonight, huh?  😓
-                        
+                    <p> Are you sick of always drinking the same thing? 😓
+                        You´ve arrived at the right place!
+                        Try it out!
                     </p>
+                    <hr/>
                     <p>
-                        
+                        Keep in mind that this page is a work in progess.      
                     </p>
+                    <h2 styles="font-weight: 800">Things that are planned:</h2>
+                    <ul>
+                        <li>Conversion from Imperial to Metric (oz to ml etc.)</li>
+                        <li>Search-function</li>
+                        <li>Better looking styling</li>
+                        
+                    </ul>
 
                     
                 </div>

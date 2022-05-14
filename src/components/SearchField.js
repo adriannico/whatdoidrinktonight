@@ -4,7 +4,7 @@ import Button from "../components/Button"
 function SearchField() {
     return (
         <div>
-            <input></input>
+            <input placeholder="fsdfs"></input>
         </div>
     )
 }

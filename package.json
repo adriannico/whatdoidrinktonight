@@ -1,6 +1,6 @@
 {
-  "homepage": "www.whatdoidrinktonight.com",
-  "name": "whatdoidrinktonight",
+  "homepage": "http://www.whatdoidrinktonight.com",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

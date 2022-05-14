@@ -9,8 +9,10 @@ function About() {
             <div className="container">
                 <div >
                     <h1 class="text-center">About</h1>
-                    <p>This website was made using a free API from <a href="https://www.thecocktaildb.com/">The Cocktail DB</a>.</p>
-                    <p>Contact me at adriannicolaisen@gmail.com.</p>
+                    <p><i>WhatDoIDrinkTonight</i> was created by Adrian Nilssen Nicolaisen as a solution
+                        to his weekly dilemma; what do i drink tonight?</p>
+                    <p>The website uses a free API from <a href="https://www.thecocktaildb.com/">The Cocktail DB</a>.</p>
+                    <p><small>Contact me at adriannicolaisen@gmail.com.</small></p>
                 </div>
             </div>
             

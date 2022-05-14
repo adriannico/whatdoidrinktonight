@@ -53,20 +53,23 @@ export default function NavBar() {
                         <li className="nav-item" onClick={handleClick}>
                             <Link to='/Search' className="nav-links" onClick={closeMobileMenu}>Search</Link>
                         </li>
-                        <li className="nav-btn">
+                        <li className="nav-item" onClick={handleClick}>
+                            <Link to='/Random' className="nav-links" onClick={closeMobileMenu}>Random</Link>
+                        </li>
+                        {/* <li className="nav-btn">
                             {button ? (
                                 <Link to="/Random" className="btn-link">
-                                    <Button onClick={closeMobileMenu} buttonStyle='btn-outline'>Random!</Button>
+                                    <Button onClick={closeMobileMenu}><p className="nav-links">Random!</p></Button>
                                 </Link>
                             ): (
                                 <Link to="/Random" className="btn-link">
-                                    <Button onClick={closeMobileMenu} buttonStyle = 'btn--outline'
+                                    <Button onClick={closeMobileMenu} styles="padding: 20px; " buttonStyle = 'btn--outline'
                                     buttonSize = 'btn--mobile'>
-                                        Random!</Button>
+                                        Random</Button>
                                 </Link>
                             )
                         }
-                        </li>
+                        </li> */}
 
                     </ul>
                     

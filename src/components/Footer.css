@@ -1,0 +1,17 @@
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--background);
+    color: rgb(188, 188, 188);
+    text-align: center;
+}
+
+
+.footer-text{
+    font-size: 1rem;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+

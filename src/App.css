@@ -39,27 +39,28 @@
 
 .page {
   align-items: center;
-  background-color: var(--background-secondary);
+  background-color: var(--background);
   padding: 30px;
-  margin: 30px 70px;
-  border-radius: 6px;
-  box-shadow: rgb(32, 32, 32) 0px 2px;
+
 }
 .page h1 {
   text-shadow: var(--background-secondary) 4px;
   font-size: 1.9rem;
 }
 .page h2 {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1rem;
 }
 
 @media screen and (max-width: 500px) {
   .page {
-    width: 90vw;
+    width: 100vw;
     text-align: center;
-    margin: auto;
-    margin-top: 20px;
+    padding: 0;
+  
+  }
+  .page li{
+    text-align: left;
   }
   .page h1 {
     font-size: 1rem;

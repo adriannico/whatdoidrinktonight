@@ -5,6 +5,7 @@ import Axios from 'axios'
 import axios from 'axios'
 import SearchResult from './SearchResult'
 import ReactDOM from 'react-dom'
+import DrinkCard from "./DrinkCard"
 
 
 var searchText = ""
@@ -14,14 +15,49 @@ var searchResults
 
 
 
+
+
 function Search() {
+
+    
+
+
+
+    var drinks = null;
+
+    const searchForDrinks = () =>{
+        searchText = document.getElementById("inputfield").value;
+        Axios.get('https://thecocktaildb.com/api/json/v1/1/search.php?s='+searchText).then(
+            (response) => {
+                console.log(response.data.drinks);
+                drinks = response.data.drinks;
+                const cards = drinks.map(drink => {
+                    return <DrinkCard 
+                    name={drink.strDrink}
+                    instructions={DOMStringList.strIns}
+                    ></DrinkCard>
+                })
+
+                }
+        )
+    }
+
+    
+
+
     return (
         <div className="page">
             <div className="container">
                 <h1>Search for a drink:</h1>
-                <input id="inputfield"></input>
-                <Button onClick={searchForDrink}>Search</Button>
+                <input placeholder="Seach for your favorite drink..." id="inputfield"></input>
+                <Button onClick={searchForDrinks}>Search</Button>
+                <div>
+                {/* {cards} */}
+                </div>
+                
+                
                 <div id="searchResults">
+                    
                 
                 </div>
                 
@@ -31,29 +67,6 @@ function Search() {
     )
 }
 
-const searchForDrink = () =>{
-    searchText = document.getElementById("inputfield").value;
-    
-    Axios.get('https://thecocktaildb.com/api/json/v1/1/search.php?s='+searchText).then(
-        (response) => {
 
-            if(response.data.drinks.length = 0 || response.data.drinks.length == null){
-                document.getElementById("searchResults").innerHTML = "Fant ingen";
-            } else{
-                document.getElementById("searchResults").innerHTML = response.data.drinks[0].strDrink;
-            }
-            
-          
-
-            
-           
-
-            
-            
-   
-        
-        }
-    )
-}
 
 export default Search

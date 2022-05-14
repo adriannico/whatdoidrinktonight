@@ -5,7 +5,10 @@ import "./Random.css"
 
 
 
+
 function Random() {
+
+
 
     const [drinkName, setDrinkName] = useState("");
     const [drinkIns, setDrinkIns] = useState("");
@@ -24,6 +27,8 @@ function Random() {
     const [drinkIng10, setDrinkIng10] = useState("");
     const [drinkIng11, setDrinkIng11] = useState("");
     const [drinkIng12, setDrinkIng12] = useState("");
+
+    const drink_name = ""
 
     // MEASURES OF EACH INGREDIENT
 
@@ -47,7 +52,9 @@ function Random() {
     const getRandomDrink = () =>{
         Axios.get("https://www.thecocktaildb.com/api/json/v1/1/random.php").then(
         (response) => {
+            
             console.log(response);
+            
             setDrinkName(response.data.drinks[0].strDrink)
             setDrinkIns(response.data.drinks[0].strInstructions)
             setDrinkImg(response.data.drinks[0].strDrinkThumb)
@@ -76,16 +83,13 @@ function Random() {
             setDrinkMs9(response.data.drinks[0].strMeasure9)
             setDrinkMs10(response.data.drinks[0].strMeasure10)
             setDrinkMs11(response.data.drinks[0].strMeasure11)
-            setDrinkMs12(response.data.drinks[0].strMeasure12)
-            
-
-
-            
+            setDrinkMs12(response.data.drinks[0].strMeasure12)  
         }
     );  
 };
     return (
         <div className = "page">
+            
 
         <div className = "container">
             <div className="grid-container">

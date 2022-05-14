@@ -1,6 +1,6 @@
 .navbar {
-  background: var(--background-secondary);
-  height: 80px;
+  background-color: rgb(255, 145, 145);
+  height: var(--navbar-height);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,13 +11,13 @@
   transition: all 0.2s ease;
   font-weight: 600;
   padding: 0px 30px;
-  box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.351);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.150);
 }
 
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: var(--navbar-height);
 }
 
 .container {
@@ -29,7 +29,7 @@
 }
 
 .navbar-logo {
-  color: #fff;
+  color: var(--navbar-text-color);
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
@@ -53,30 +53,33 @@
 }
 
 .nav-item {
-  height: 80px;
+  height: var(--navbar-height);
   border-bottom: 2px solid transparent;
 }
 
 .nav-item:hover {
   transition: all 0.2s ease;
-  border-bottom: 2px solid var(--primary);
+  border-bottom: 5px solid rgba(0, 0, 0, 0);
 }
 
 .nav-links {
-  color: #fff;
+  color: var(--navbar-text-color);
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0rem 1rem;
   height: 100%;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 .fa-bars {
-  color: #fff;
+  color: black;
 }
 
 .menu-icon {
   display: none;
+  color: var(--navbar-text-color);
 }
 
 @media screen and (max-width: 960px) {
@@ -85,10 +88,10 @@
   }
 
   .navbar {
-    height: 80px;
+    height: var(--navbar-height);
   }
   .navbar-container {
-    height: 80px;
+    height: var(--navbar-height);
   }
 
   .nav-menu {
@@ -97,7 +100,7 @@
     width: 100%;
     height: 90vh;
     position: absolute;
-    top: 80px;
+    top: var(--navbar-height);
     left: -100%;
     opacity: 1;
     transition: all 0.3s ease;
@@ -105,7 +108,7 @@
   }
 
   .nav-menu.active {
-    background: var(--background-secondary);
+    background:  var(--primary);
     left: 0;
     opacity: 1;
     transition: all 0.3s ease;
@@ -122,14 +125,14 @@
   }
 
   .nav-links:hover {
-    color: var(--primary);
+    color: var(--secondary);
     transform: scale(1.04);
     transition: all 0.1s ease;
-    filter: blur(0.5px);
   }
 
   .nav-item:hover {
     border: none;
+    font-size: 1.5rem;
   }
 
   .nav-item {
@@ -151,10 +154,11 @@
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
+    color: var(--primary);
   }
 
   .fa-times {
-    color: #fff;
+    color: var(--navbar-text-color);
     font-size: 2rem;
   }
 
