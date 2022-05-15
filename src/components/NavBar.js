@@ -35,7 +35,7 @@ export default function NavBar() {
         <>
         <IconContext.Provider value={{ color: '#fff'}}>
             <div className="navbar">
-                <div className="navbar-container container">
+                <div className="navbar-container">
                     <Link to='/Home' className="navbar-logo" onClick={closeMobileMenu}>
                         <FaWineBottle className="navbar-icon"/>
                         wdidt

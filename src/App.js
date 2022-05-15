@@ -8,6 +8,7 @@ import About from "./components/pages/HomePage/About"
 import Random from "./components/pages/HomePage/Random"
 import Home from "./components/pages/HomePage/Home"
 import Search from "./components/pages/HomePage/Search"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -16,6 +17,7 @@ import Search from "./components/pages/HomePage/Search"
 function App() {
   return (
     <Router>
+      
       <NavBar/>
       
       <Switch>

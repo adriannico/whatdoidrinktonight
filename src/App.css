@@ -37,10 +37,20 @@
   }
 }
 
+
+.section{
+  border-width: 2px;
+  border-color: lightgrey;
+}
+
 .page {
-  align-items: center;
-  background-color: var(--background);
-  padding: 30px;
+  background-color: white;
+  padding: 10px 10px;
+  margin: 15px;
+  border-width: 1px;
+  border-color:rgb(200, 200, 200);
+  border-style:solid;
+  border-radius: 6px;  
 
 }
 .page h1 {
@@ -52,11 +62,9 @@
   font-size: 1rem;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .page {
-    width: 100vw;
     text-align: center;
-    padding: 0;
   
   }
   .page li{
