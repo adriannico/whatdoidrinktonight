@@ -6,7 +6,6 @@ import axios from 'axios'
 import SearchResult from './SearchResult'
 import ReactDOM from 'react-dom'
 import DrinkCard from "./DrinkCard"
-import SearchBar from "./SearchBar"
 
 
 var searchText = ""
@@ -47,12 +46,24 @@ function Search() {
 
 
     return (
-            <div className="">
-                <SearchBar></SearchBar>
+        <div className="page">
+            <div className="container">
+                <h1>Search for a drink:</h1>
+                <input placeholder="Seach for your favorite drink..." id="inputfield"></input>
+                <Button onClick={searchForDrinks}>Search</Button>
+                <div>
+                {/* {cards} */}
+                </div>
+                
+                
+                <div id="searchResults">
+                    
+                
+                </div>
                 
             </div>
             
-       
+        </div>
     )
 }
 

@@ -2,7 +2,6 @@
     import Axios from 'axios'
 import React, { useEffect, useState } from "react";
 import "./Random.css"
-import SearchBar from "./SearchBar.js"
 
 
 
@@ -89,17 +88,12 @@ function Random() {
     );  
 };
     return (
-        <div>
-        <SearchBar/>
         <div className = "page">
-                    
+            
+
         <div className = "container">
             <div className="grid-container">
                 <div className="grid-item">
-
-
-
-
                     <h1><b>{drinkName}</b></h1>
                     <h2>{drinkMs1} {drinkIng1}</h2>
                         <h2>{drinkMs2} {drinkIng2}</h2>
@@ -115,7 +109,6 @@ function Random() {
                         <h2>{drinkMs12} {drinkIng12}</h2>
                         <hr></hr>
                         <h3 className="instructions">{drinkIns}</h3>
-                        
                       
                 </div>
                 <div className="grid-item">
@@ -132,7 +125,6 @@ function Random() {
         </div>
         <div className="drink-name">
 
-        </div>
         </div>
         </div>
     )

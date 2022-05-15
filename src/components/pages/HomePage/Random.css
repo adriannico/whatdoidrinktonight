@@ -5,10 +5,14 @@
   align-items: top;
 }
 
-
+.grid-item {
+  border: 0px white solid;
+  padding: 20px;
+  width: 39vw;
+}
 
 .page {
-  
+  min-height: 40vh;
 }
 
 .thumbnail {
@@ -40,6 +44,10 @@
 }
 
 @media screen and (max-width: 500px) {
+  .instructions {
+    font-size: 1rem;
+    line-height: 120%;
+  }
 
   .thumbnail {
     width: 35vw;
@@ -48,9 +56,9 @@
 }
 
 .randomButton {
-  padding: 5px;
+  padding: 20px 50px;
   margin-bottom: 30px;
-  border-radius: 4px;
+  border-radius: 30px;
   outline: none;
   border: none;
   cursor: pointer;
