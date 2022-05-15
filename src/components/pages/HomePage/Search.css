@@ -3,3 +3,11 @@ input {
   padding: 12px;
 
 }
+
+.results{
+  display:flex;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.296);
+
+}

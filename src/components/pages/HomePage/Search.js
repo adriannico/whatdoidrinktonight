@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState } from 'react'
 import Button from '../../Button'
 import './Search.css'
 import Axios from 'axios'
@@ -6,6 +6,7 @@ import axios from 'axios'
 import SearchResult from './SearchResult'
 import ReactDOM from 'react-dom'
 import DrinkCard from "./DrinkCard"
+import SearchBar from "./SearchBar"
 
 
 var searchText = ""
@@ -22,22 +23,20 @@ function Search() {
     
 
 
+    let drinkResult = ""
 
-    var drinks = null;
+
+    const [drinks, setDrinks] = useState([])
+
 
     const searchForDrinks = () =>{
         searchText = document.getElementById("inputfield").value;
         Axios.get('https://thecocktaildb.com/api/json/v1/1/search.php?s='+searchText).then(
             (response) => {
                 console.log(response.data.drinks);
-                drinks = response.data.drinks;
-                const cards = drinks.map(drink => {
-                    return <DrinkCard 
-                    name={drink.strDrink}
-                    instructions={DOMStringList.strIns}
-                    ></DrinkCard>
-                })
 
+                setDrinks(response.data.drinks);
+                
                 }
         )
     }
@@ -47,23 +46,24 @@ function Search() {
 
     return (
         <div className="page">
-            <div className="container">
-                <h1>Search for a drink:</h1>
-                <input placeholder="Seach for your favorite drink..." id="inputfield"></input>
-                <Button onClick={searchForDrinks}>Search</Button>
-                <div>
-                {/* {cards} */}
-                </div>
-                
-                
-                <div id="searchResults">
-                    
-                
-                </div>
-                
+            <input placeholder="Search for a drink!"id="inputfield" type="text"/>
+            <input value="Search!"className="btn" onClick={searchForDrinks} type="button" placeholder="Search..." data=""/>
+            <div className="results">
+            {drinks.map((drink) =>(
+                <DrinkCard 
+                name={drink.strDrink} 
+                instructions={drink.strInstructions} 
+                ingredient1={drink.strIngredient1} 
+                ingredient2={drink.strIngredient2}
+                ingredient3={drink.strIngredient3}
+                img = {drink.strDrinkThumb}></DrinkCard>
+            ))}
+            
             </div>
+
             
         </div>
+        
     )
 }
 

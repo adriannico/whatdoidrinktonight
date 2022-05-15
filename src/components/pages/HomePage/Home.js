@@ -4,7 +4,7 @@ function Home() {
     return (
         <div>
             <div className="page">
-                <div className="container">
+                <div className="">
                     <h1>
                         WhatDoIDrinkTonight.com
                     </h1>
