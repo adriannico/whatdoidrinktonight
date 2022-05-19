@@ -8,8 +8,6 @@ import "./Random.css"
 
 function Random() {
 
-
-
     const [drinkName, setDrinkName] = useState("");
     const [drinkIns, setDrinkIns] = useState("");
     const [drinkImg, setDrinkImg] = useState("");

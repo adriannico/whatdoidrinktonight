@@ -7,6 +7,10 @@ import SearchResult from './SearchResult'
 import ReactDOM from 'react-dom'
 import DrinkCard from "./DrinkCard"
 import SearchBar from "./SearchBar"
+import { Form,FormCheck, Radio, ControlLabel} from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css"
+
+import {Container, Row, Col} from "react-bootstrap";
 
 
 var searchText = ""
@@ -46,8 +50,56 @@ function Search() {
 
     return (
         <div className="page">
-            <input placeholder="Search for a drink!"id="inputfield" type="text"/>
-            <input value="Search!"className="btn" onClick={searchForDrinks} type="button" placeholder="Search..." data=""/>
+            <Container>
+                <Row>
+                    <Col md={6}>
+                        <div>
+                            <Form.Label>Name</Form.Label>
+                            <Form.Control id="inputfield" placeholder="SEARCH FOR DRINK...  ">
+                            </Form.Control>
+                            
+                        </div>
+                    </Col>
+                    <Col md={6}>
+                        <div>
+                            <Form.Label>Name</Form.Label>
+                            <Form.Control placeholder="  ">
+                            </Form.Control>
+                        </div>
+                    </Col> 
+            </Row>
+            <Row><Col md={12}>
+            <Button value="Search!" className="btn-primary" onClick={searchForDrinks} type="button" placeholder="Search..." data="">Search</Button>
+            </Col>
+            </Row>
+
+            
+
+
+            </Container>
+           
+            
+            
+
+            {/* <div className="search-options-container">
+                <input className="grid-item" type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
+                <input className="grid-item" type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
+                <input className="grid-item form-text" placeholder="Search for a drink!"id="inputfield" type="text"/>
+                <select class="form-select" name="languages" id="lang">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5+">5+</option>
+      </select>
+            </div> */}
+
+            <Form>
+
+
+            </Form>
+            
+            
             <div className="results">
             {drinks.map((drink) =>(
                 <DrinkCard 

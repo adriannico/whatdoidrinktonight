@@ -8,6 +8,7 @@ import About from "./pages/HomePage/About"
 import Random from "./pages/HomePage/Random"
 import Home from "./pages/HomePage/Home"
 import getRandomDrink from "./pages/HomePage/Random"
+import {Navbar} from "react-bootstrap";
 
 
 

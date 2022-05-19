@@ -1,11 +1,12 @@
 footer{
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: var(--background);
     color: rgb(188, 188, 188);
     text-align: center;
+    height: 75px;
 }
 
 

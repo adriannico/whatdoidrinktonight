@@ -8,6 +8,35 @@ input {
   display:flex;
   align-items: center;
   width: 100%;
-  background-color: rgba(128, 128, 128, 0.296);
+
+}
+.search-options-container{
+  text-align: left;
+  /* display: grid; */
+  width: 100%;
+  /* grid-template-columns: 1fr 1fr; */
+ 
+}
+
+label{
+  text-align: left;
+  
+}
+.searchcontent{
+  padding: 0 !important;
+  margin: 0 !important;
+
+}
+
+
+
+@media screen and (max-width: 500) {
+  .search-options-container{
+    text-align: grid;
+    grid-template-columns: 1;
+    grid-auto-rows: 100%;
+    
+  }
+
 
 }

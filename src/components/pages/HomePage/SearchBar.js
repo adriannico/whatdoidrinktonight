@@ -2,6 +2,7 @@ import React from 'react'
 
 import Random from "./Random"
 import Axios from 'axios'
+import "./SearchBar.css"
 
 
 function SearchBar(props) {
@@ -49,12 +50,14 @@ function SearchBar(props) {
   return (
     <div className ="search">
         <div className="searchInputs"></div>
+        
         <input id="searchField" placeholder="Search..."/>
+        
         <button onClick={handleClick}>Search</button>
 
 
         <div className="results">
-            <p></p>
+        
         </div>
         
 

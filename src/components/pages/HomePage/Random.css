@@ -13,6 +13,7 @@
 
 .page {
   min-height: 40vh;
+  text-align: left;
 }
 
 .thumbnail {
