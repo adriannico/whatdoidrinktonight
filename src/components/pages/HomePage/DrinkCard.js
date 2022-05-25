@@ -20,10 +20,9 @@ export default function DrinkCard(props) {
           <p>{props.instructions}</p>
         </div>
         <div className="grid-item">
-          <Link to={{pathname:"/Drinkview", data:props.drink}}>
+          <Link to={`/DrinkView/${props.id}`}>
             <Button
               className="btn-primary"
-              to="/DrinkView"
               value="More info"
               type="button"
             >
@@ -37,6 +36,7 @@ export default function DrinkCard(props) {
             {props.ingredient2.toLowerCase()} and{" "}
             {props.ingredient3.toLowerCase()}
           </p>
+          <p>ID={props.id}</p>
         </div>
       </div>
     </div>

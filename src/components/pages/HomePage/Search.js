@@ -23,16 +23,8 @@ var searchResults
 
 
 function Search() {
-
-    
-
-
     let drinkResult = ""
-
-
     const [drinks, setDrinks] = useState([])
-
-
     const searchForDrinks = () =>{
         searchText = document.getElementById("inputfield").value;
         Axios.get('https://thecocktaildb.com/api/json/v1/1/search.php?s='+searchText).then(
@@ -44,9 +36,6 @@ function Search() {
                 }
         )
     }
-
-    
-
 
     return (
         <div className="page">
@@ -95,14 +84,12 @@ function Search() {
             </div> */}
 
             <Form>
-
-
             </Form>
-            
             
             <div className="results">
             {drinks.map((drink) =>(
                 <DrinkCard 
+                id={drink.idDrink}
                 name={drink.strDrink} 
                 instructions={drink.strInstructions} 
                 ingredient1={drink.strIngredient1} 
