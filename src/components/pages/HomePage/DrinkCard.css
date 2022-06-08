@@ -19,7 +19,7 @@ background-color: var(--background);
 
 }
 .cardsection1{
-    display: block;
+    /* display: block; */
     /* grid-column: span 1; */
 }
 
@@ -40,7 +40,7 @@ background-color: var(--background);
     
 }
 .cardImage{
-    width: 100%;
+    width: 130px;
     height: auto;
     margin: 0;
 

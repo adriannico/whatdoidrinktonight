@@ -41,7 +41,7 @@
   background-color: var(--background);
   padding: 30px 50px 10px 50px;
 
-  /* border: 1px solid hsla(0, 0%, 50%, 0.228); */
+  border: 1px solid hsla(0, 0%, 50%, 0.228);
   margin: 0px;
   border-radius: 6px;
   text-align: left;
@@ -61,4 +61,8 @@
   .page h1 {
     font-size: 1.3rem;
   }
+}
+
+Navbar{
+  color: white;  
 }

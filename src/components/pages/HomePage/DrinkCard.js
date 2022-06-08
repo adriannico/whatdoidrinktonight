@@ -16,7 +16,7 @@ export default function DrinkCard(props) {
         </div>
 
         <div className="grid-item cardsection2">
-          <h1>Instructions:</h1>
+          <h2>Instructions:</h2>
           <p>{props.instructions}</p>
         </div>
         <div className="grid-item">

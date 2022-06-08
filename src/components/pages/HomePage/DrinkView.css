@@ -1,17 +1,7 @@
 
 
-.grid-container{
-   width: 100%;
-   display: grid;
-   grid-template-columns: 1fr 4fr !important;
-}
-
-.grid-item{
-    width: auto;
-    height: auto;
-}
-
-.header{
-
+.drinkViewImage{
+    width: 250px;
+    border-radius: 50%;
 
 }

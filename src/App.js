@@ -29,7 +29,7 @@ function App() {
          </Nav>
         <Nav>
           <Link to="/Search">Search</Link>
-        </Nav>
+        </Nav> s
         <Nav>
           <Link to="/About">About</Link>
         </Nav>

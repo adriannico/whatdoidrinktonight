@@ -92,7 +92,8 @@
     height: var(--navbar-height);
   }
   .navbar-container {
-    height: var(--navbar-height);
+    height: 50px;
+    
   }
 
   .nav-menu {

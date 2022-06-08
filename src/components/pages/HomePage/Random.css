@@ -5,11 +5,11 @@
   align-items: top;
 }
 
-.grid-item {
+/* .grid-item {
   border: 0px white solid;
   padding: 20px;
   width: 39vw;
-}
+} */
 
 .page {
   min-height: 40vh;

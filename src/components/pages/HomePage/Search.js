@@ -24,7 +24,9 @@ var searchResults
 
 function Search() {
     let drinkResult = ""
+    
     const [drinks, setDrinks] = useState([])
+
     const searchForDrinks = () =>{
         searchText = document.getElementById("inputfield").value;
         Axios.get('https://thecocktaildb.com/api/json/v1/1/search.php?s='+searchText).then(
@@ -41,7 +43,7 @@ function Search() {
         <div className="page">
             <Container>
                 <Row>
-                    <Col md={6}>
+                    <Col md={6} sm={12}>
                         <div>
                             <Form.Label>Name</Form.Label>
                             <Form.Control id="inputfield" placeholder="SEARCH FOR DRINK...  ">
@@ -49,7 +51,7 @@ function Search() {
                             
                         </div>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} sm={12}>
                         <div>
                             <Form.Label>Name</Form.Label>
                             <Form.Control placeholder="  ">
@@ -57,10 +59,19 @@ function Search() {
                         </div>
                     </Col> 
             </Row>
-            <Row><Col md={12}>
-            <Button value="Search!" className="btn-primary" onClick={searchForDrinks} type="button" placeholder="Search..." data="">Search</Button>
-            </Col>
+            <Row>
+                <Col md={12}>
+                    <Button value="Search!" className="btn-primary" onClick={searchForDrinks} type="button" placeholder="Search..." data="">Search</Button>
+                </Col>
             </Row>
+            <Row>
+                <Col md={12}>
+
+                    <Button value="Search!" className="btn-primary" onClick={searchForDrinks} type="button" placeholder="Search..." data="">Search</Button>
+
+                </Col>
+            </Row>
+            
 
             
 

@@ -5,6 +5,8 @@ import { useLocation, useParams } from "react-router-dom";
 
 import Axios from 'axios';
 import {useState } from 'react'
+import {Container, Row, Col} from "react-bootstrap"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default function DrinkView(){
@@ -29,32 +31,40 @@ export default function DrinkView(){
         searchForDrinks(); // TODO BLIR IKKE KALT
 
     return(
-        <div className="container">
-            <div className="page">
-                <div className="row">
-                    <div className="col-md-4">
+        <div className="page">
+            <Container>
+                <Row>
+                    <Col md={4}>
                        <h1>{drink?.strDrink} </h1>
-                    </div>
-                    <div className="col-md-4">
+                    </Col>
+                    <Col md={4}>
                         <p>Type: {drink?.strAlcoholic}</p>
-                    </div>
-        
-                    <div className="col-md-4">
+                    </Col>
+                    <Col md={4}>
                         <p>Recommended glass: {drink?.strGlass}</p>
-                    </div>
+                    </Col>
                     <hr></hr>
-                </div>
+                </Row>
+                <Row>
+                    <Col md={4}>
+                       <img className="drinkViewImage" src={drink?.strDrinkThumb} alt={drink?.strDrink}/> 
+                    </Col>
+                    <Col md={4}>
+                        <p>Type: {drink?.strAlcoholic}</p>
+                    </Col>
+        
+                    <Col md={4}>
+                        <p>Recommended glass: {drink?.strGlass}</p>
+                    </Col>
+                </Row>
 
 
-            </div>
-            
-            
-            
 
-
-
+           
+        </Container>
 
         </div>
+        
 
 
 

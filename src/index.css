@@ -34,9 +34,6 @@ body {
     sans-serif;
   font-weight: 500 ;
   line-height: 120%;
-  
-
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -45,6 +42,13 @@ html{
   height: 100% !important;
   background-color: var(--background);
 }
+p{
+  font-weight: 500 !important; 
+}
+h1{
+  font-weight:700 !important;
+}
+
 
 hr{
   border-radius: 0;
@@ -54,9 +58,7 @@ a {
   color: rgb(0, 68, 255);
 }
 
-h1{
-  font-size: large;
-}
+
 
 
 a:hover{
