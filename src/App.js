@@ -18,12 +18,13 @@ import {Link} from 'react-router-dom';
 
 
 
+
 function App() {
   return (
     <Router>
       {/* <NavBar/> */}
       <Navbar bg="navbar-color">
-        <Navbar.Brand>WDIDT</Navbar.Brand>
+        <Navbar.Brand className="logo">WDIDT</Navbar.Brand>
         <Nav>
           <Link to="/Home">Home</Link>
          </Nav>
@@ -34,6 +35,7 @@ function App() {
           <Link to="/About">About</Link>
         </Nav>
       </Navbar>
+      
       
       
       <Switch>

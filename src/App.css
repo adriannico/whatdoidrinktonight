@@ -39,11 +39,12 @@
 
 .page {
   background-color: var(--background);
-  padding: 30px 10vw 30px 10vw;
-  border: 1px solid hsla(0, 0%, 50%, 0);
-  margin: 0px;
+  padding: 30px 2vw 30px 2vw;
+  border: 1px solid hsla(0, 0%, 50%, 0.1);
+  margin: 20px 10vw;
   border-radius: 6px;
   text-align: left;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.250);
 
 }
 
@@ -59,6 +60,4 @@
   }
 }
 
-.bg-navbar-color{
-  background-color: red;
-}
+

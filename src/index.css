@@ -1,13 +1,12 @@
 :root {
-  --primary:#FF9292 ;
+  --primary:#604a6d ;
   --secondary: #FFB4B4;
   --primary-accent: #b46060;
   --background:#ffffff;
-  --background-secondary: 3C415C;
+  --background-secondary: #f7f0f2;
   --foreground: #5a5a5a;
-  --text-color: black;
+  --text-color: rgb(220, 204, 204);
   --navbar-text-color: white;
-
   --navbar-height: 65px;
 
 
@@ -19,12 +18,26 @@
   --foreground: #5a5a5a;*/
 }
 
-*, body, div{
+html body{
+  margin: 0;
+  height: 100%;
+  
  
 }
+Button{
+  border-radius:20px !important;
+}
+
+.background{
+  background-color: var(--background-secondary) !important;
+}
 body {
-  height: 100% !important; 
-  background-color: var(--background) !important;
+  margin: 0px;
+  min-height: 100%;
+  width: 100%;
+  max-height: fit-content;
+  background-color: var(--background-secondary) !important;
+
   color: var(--text-color);
   margin: 0;
 

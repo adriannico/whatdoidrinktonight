@@ -35,26 +35,25 @@ export default function DrinkView(){
         <div className="page">
             <Container>
                 <Row>
-                    <Col md={4}>
-                       <h1>{drink?.strDrink} </h1>
+                
+                    <Col md={3}>
+                    <h1>{drink?.strDrink} </h1>
+                        <p className="drinktype">{drink?.strAlcoholic}</p>
                     </Col>
                     <Col md={4}>
-                        <p>Type: {drink?.strAlcoholic}</p>
-                    </Col>
-                    <Col md={4}>
-                        <p>Recommended glass: {drink?.strGlass}</p>
+                       <i class="fa-solid fa-champagne-glass"></i> <p> {drink?.strGlass}</p>
                     </Col>
                     <hr></hr>
                 </Row>
                 <Row>
                     <Col md={3}>
-                       <img className="drinkViewImage" src={drink?.strDrinkThumb} alt={drink?.strDrink}/> 
+                       <img className="drinkViewImage img-fluid" src={drink?.strDrinkThumb} alt={drink?.strDrink}/> 
                     </Col>
                     <Col md={5}>
                         <p>{drink?.strInstructions}</p>
                     </Col>
                     <Col md={2}>
-                        <div>
+                        <div className="ingredients">
                             <ul>
                             <p>{drink?.strIngredient1}</p>     
                             <p>{drink?.strIngredient2}</p>

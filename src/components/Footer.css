@@ -3,7 +3,7 @@ footer{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: var(--background);
+    background-color: var(--background-secondary);
     color: rgb(188, 188, 188);
     text-align: center;
     height: 75px;
