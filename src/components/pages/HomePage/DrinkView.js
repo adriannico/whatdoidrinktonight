@@ -4,9 +4,10 @@ import "./DrinkView.css";
 import { useLocation, useParams } from "react-router-dom";
 
 import Axios from 'axios';
-import {useState } from 'react'
+import {useState, Link } from 'react'
 import {Container, Row, Col} from "react-bootstrap"
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 export default function DrinkView(){
@@ -46,16 +47,42 @@ export default function DrinkView(){
                     <hr></hr>
                 </Row>
                 <Row>
-                    <Col md={4}>
+                    <Col md={3}>
                        <img className="drinkViewImage" src={drink?.strDrinkThumb} alt={drink?.strDrink}/> 
                     </Col>
-                    <Col md={4}>
-                        <p>Type: {drink?.strAlcoholic}</p>
+                    <Col md={5}>
+                        <p>{drink?.strInstructions}</p>
                     </Col>
-        
-                    <Col md={4}>
-                        <p>Recommended glass: {drink?.strGlass}</p>
+                    <Col md={2}>
+                        <div>
+                            <ul>
+                            <p>{drink?.strIngredient1}</p>     
+                            <p>{drink?.strIngredient2}</p>
+                            <p>{drink?.strIngredient3}</p>
+                            <p>{drink?.strIngredient4}</p>
+                            <p>{drink?.strIngredient5}</p>
+                            <p>{drink?.strIngredient6}</p>
+                            </ul>
+                        </div>         
+                        
                     </Col>
+                    <Col md={2}>
+                        <div>
+                            <ul>
+                            <p>{drink?.strIngredient6}</p>
+                            <p>{drink?.strIngredient7}</p>     
+                            <p>{drink?.strIngredient8}</p>
+                            <p>{drink?.strIngredient9}</p>
+                            <p>{drink?.strIngredient10}</p>
+                            <p>{drink?.strIngredient11}</p>
+                            <p>{drink?.strIngredient12}</p>
+                            </ul>
+                            
+
+                        </div>         
+                        
+                    </Col>
+    
                 </Row>
 
 

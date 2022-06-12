@@ -22,14 +22,14 @@ function App() {
   return (
     <Router>
       {/* <NavBar/> */}
-      <Navbar>
+      <Navbar bg="navbar-color">
         <Navbar.Brand>WDIDT</Navbar.Brand>
         <Nav>
           <Link to="/Home">Home</Link>
          </Nav>
         <Nav>
           <Link to="/Search">Search</Link>
-        </Nav> s
+        </Nav> 
         <Nav>
           <Link to="/About">About</Link>
         </Nav>

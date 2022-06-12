@@ -17,7 +17,7 @@ export default function DrinkCard(props) {
 
         <div className="grid-item cardsection2">
           <h2>Instructions:</h2>
-          <p>{props.instructions}</p>
+          <p>{props?.instructions}</p>
         </div>
         <div className="grid-item">
           <Link to={`/DrinkView/${props.id}`}>
@@ -32,11 +32,14 @@ export default function DrinkCard(props) {
         </div>
         <div className="grid-item">
           <p id="ingredient-text">
-            <b>Includes:</b> {props.ingredient1},{" "}
-            {props.ingredient2.toLowerCase()} and{" "}
-            {props.ingredient3.toLowerCase()}
+          
+
+           
+            <b>Includes:</b> {props?.ingredient1},{" "}
+            {props?.ingredient2} and{" "}
+            {props?.ingredient3}
           </p>
-          <p>ID={props.id}</p>
+          {/* <p>ID={props.id}</p> */}
         </div>
       </div>
     </div>

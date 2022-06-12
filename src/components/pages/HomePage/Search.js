@@ -23,6 +23,8 @@ var searchResults
 
 
 function Search() {
+
+
     let drinkResult = ""
     
     const [drinks, setDrinks] = useState([])
@@ -64,13 +66,7 @@ function Search() {
                     <Button value="Search!" className="btn-primary" onClick={searchForDrinks} type="button" placeholder="Search..." data="">Search</Button>
                 </Col>
             </Row>
-            <Row>
-                <Col md={12}>
-
-                    <Button value="Search!" className="btn-primary" onClick={searchForDrinks} type="button" placeholder="Search..." data="">Search</Button>
-
-                </Col>
-            </Row>
+   
             
 
             

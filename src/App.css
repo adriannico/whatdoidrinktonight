@@ -39,19 +39,15 @@
 
 .page {
   background-color: var(--background);
-  padding: 30px 50px 10px 50px;
-
-  border: 1px solid hsla(0, 0%, 50%, 0.228);
+  padding: 30px 10vw 30px 10vw;
+  border: 1px solid hsla(0, 0%, 50%, 0);
   margin: 0px;
   border-radius: 6px;
   text-align: left;
 
 }
 
-.page h2 {
-  font-weight: 500;
-  font-size: 1rem;
-}
+
 
 @media screen and (max-width: 500px) {
  
@@ -63,6 +59,6 @@
   }
 }
 
-Navbar{
-  color: white;  
+.bg-navbar-color{
+  background-color: red;
 }
