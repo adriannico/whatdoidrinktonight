@@ -8,7 +8,10 @@ import Button from "../../Button";
 export default function DrinkCard(props) {
   return (
     <div className="card">
+      <Link to={`/DrinkView/${props.id}`}>
+      
       <div className="drinkCard">
+      
         <div className="grid-item cardsection1">
           <h1 className="drink-title">{props.name}</h1>
           <hr />
@@ -16,21 +19,10 @@ export default function DrinkCard(props) {
         </div>
 
         <div className="grid-item cardsection2">
-          <h2>Instructions:</h2>
-          <p>{props?.instructions}</p>
-        </div>
-        <div className="grid-item">
-          <Link to={`/DrinkView/${props.id}`}>
-            <Button
-              className="btn-primary"
-              value="More info"
-              type="button"
-            >
-              More info
-            </Button>
-          </Link>
-        </div>
-        <div className="grid-item">
+         
+          <p className="drinkdetails">{props.category}</p>
+          <p className="drinkdetails"><i class="fa-solid fa-skull-crossbones"></i> {props.alcoholic}   </p>
+          <p className="drinkdetails"><i class="fa-solid fa-martini-glass"></i> {props.glass}</p>
           <p id="ingredient-text">
           
 
@@ -39,9 +31,20 @@ export default function DrinkCard(props) {
             {props?.ingredient2} and{" "}
             {props?.ingredient3}
           </p>
+                    
+        
+        </div>
+        <div className="grid-item">
+          
+        </div>
+        <div className="grid-item">
+          
           {/* <p>ID={props.id}</p> */}
         </div>
+        
       </div>
+      </Link>
+     
     </div>
   );
 }

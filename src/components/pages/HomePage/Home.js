@@ -12,6 +12,10 @@ function Home() {
                         You´ve arrived at the right place!
                         Try it out!
                     </p>
+                    <p><i>WhatDoIDrinkTonight</i> was created by Adrian Nilssen Nicolaisen as a solution
+                        to him and his friends' weekendly dilemma; what do i drink tonight?</p>
+                    <p>The website uses a free API from <a href="https://www.thecocktaildb.com/">The Cocktail DB</a>.</p>
+                    <p><small>Contact me at adriannicolaisen@gmail.com.</small></p>
                     <hr/>
                     <p>
                         Keep in mind that this page is a work in progess.      
@@ -26,6 +30,7 @@ function Home() {
 
                     
                 </div>
+               
                 
             </div>
             

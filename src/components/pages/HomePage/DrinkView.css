@@ -1,17 +1,24 @@
 
 
 .drinkViewImage{
-    width: 200px;
+    width: 80%;
     border-radius: 50%;
-    align-items: center;
+    margin: auto;
+  width: 100%;
+  padding: 10px;
+    
 
 }
 
 
-.drinktype{
+.drinkdetails{
     font-weight: 600 !important;
+   
+    color: var(--text-accent);
+    font-size: .9rem !important;
 }
 
 .ingredients{
-    font-weight: 700 !important;
+    font-weight: bold;
+    color:var(--text-accent);
 }

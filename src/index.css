@@ -1,11 +1,12 @@
 :root {
-  --primary:#604a6d ;
+  --primary:#9d5579 ;
   --secondary: #FFB4B4;
   --primary-accent: #b46060;
   --background:#ffffff;
   --background-secondary: #f7f0f2;
   --foreground: #5a5a5a;
   --text-color: rgb(220, 204, 204);
+  --text-accent: rgb(84, 84, 84);
   --navbar-text-color: white;
   --navbar-height: 65px;
 
@@ -28,15 +29,14 @@ Button{
   border-radius:20px !important;
 }
 
-.background{
-  background-color: var(--background-secondary) !important;
-}
+
 body {
   margin: 0px;
   min-height: 100%;
   width: 100%;
   max-height: fit-content;
-  background-color: var(--background-secondary) !important;
+  background: rgb(228,228,228);
+  background: linear-gradient(180deg, rgb(220, 220, 220) 0%, rgba(252,252,252,0) 100%);
 
   color: var(--text-color);
   margin: 0;
@@ -142,6 +142,8 @@ code {
   background-color: var(--primary)!important;
   color: white !important;
   font-weight: 700 !important;
+  margin: 10px 0 !important;
+  border-radius: 20px !important;
   
 }
 

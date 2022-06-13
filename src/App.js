@@ -31,9 +31,7 @@ function App() {
         <Nav>
           <Link to="/Search">Search</Link>
         </Nav> 
-        <Nav>
-          <Link to="/About">About</Link>
-        </Nav>
+        
       </Navbar>
       
       
@@ -46,7 +44,7 @@ function App() {
         <Route exact path='/DrinkView/:id' component={DrinkView} />
         <Redirect to="/Home" /> 
       </Switch>
-      <Footer/>
+
     </Router>
   );
 }
