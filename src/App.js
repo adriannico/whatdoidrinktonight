@@ -9,6 +9,7 @@ import Random from "./components/pages/HomePage/Random"
 import Home from "./components/pages/HomePage/Home"
 import Search from "./components/pages/HomePage/Search"
 import DrinkView from "./components/pages/HomePage/DrinkView"
+import IngredientView from "./components/pages/HomePage/IngredientView"
 import {FormControl, FormGroup, ControlLabel, HelpBlock, Checkbox, Radio, Nav} from 'react-bootstrap';
 import {Container, Row, Col} from "react-bootstrap";
 import {Navbar} from "react-bootstrap";
@@ -42,6 +43,7 @@ function App() {
         <Route exact path='/Home' component={Home} />
         <Route exact path='/Search' component={Search} />
         <Route exact path='/DrinkView/:id' component={DrinkView} />
+        <Route exact path='/IngredientView/:id' component={IngredientView} />
         <Redirect to="/Home" /> 
       </Switch>
 

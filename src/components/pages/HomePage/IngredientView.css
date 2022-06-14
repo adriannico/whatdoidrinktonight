@@ -1,0 +1,22 @@
+
+
+.ingredientViewImage{
+    width: 80%;
+    border-radius: 50%;
+    margin: auto;
+  width: 100%;
+  padding: 10px;
+    
+
+}
+
+.ingredientdetails{
+    font-weight: 600 !important;
+    color: var(--text-accent )!important;
+    font-size: .9rem !important;
+}
+
+.ingredients{
+    font-weight: bold;
+    color:var(--text-accent);
+}

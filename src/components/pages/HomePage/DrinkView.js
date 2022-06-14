@@ -1,14 +1,14 @@
 import React from "react";
 
 import "./DrinkView.css";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation, useParams, Link } from "react-router-dom";
 
 import Axios from 'axios';
-import {useState, Link } from 'react'
+import {useState} from 'react'
 import {Container, Row, Col} from "react-bootstrap"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 
 
@@ -20,6 +20,8 @@ export default function DrinkView(){
     console.log("ID="+id);
     const [drink, setDrink] = useState()
 
+    
+
 
     const searchForDrinks = () =>{
         Axios.get('https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i='+id).then(
@@ -28,8 +30,6 @@ export default function DrinkView(){
                 setDrink(response.data.drinks[0])
                 console.log("Drink="+drink);
                  // setDrink(response.data.drinks[0]);
-                
-
              }
         )
         }
@@ -67,21 +67,20 @@ export default function DrinkView(){
                         
                         
                             <Col md={4}>
-                                
                                 <div className="ingredients">
-                                    <p><b>{drink?.strMeasure1} {drink?.strIngredient1}</b></p>
-                                    <p><b>{drink?.strMeasure3} {drink?.strIngredient3}</b></p>
-                                    <p><b>{drink?.strMeasure5} {drink?.strIngredient5}</b></p>
-                                    <p><b>{drink?.strMeasure7} {drink?.strIngredient7}</b></p>
-                                    <p><b>{drink?.strMeasure9} {drink?.strIngredient9}</b></p>
-                                    <p><b>{drink?.strMeasure11} {drink?.strIngredient11}</b></p>
+                                    <p><b>{drink?.strMeasure1} <Link to={`/IngredientView/${(drink?.strIngredient1)}`}> {drink?.strIngredient1}</Link></b></p>
+                                    <p><b>{drink?.strMeasure3} <Link to={`/IngredientView/${(drink?.strIngredient3)}`}> {drink?.strIngredient3}</Link></b></p>
+                                    <p><b>{drink?.strMeasure5} <Link to={`/IngredientView/${(drink?.strIngredient5)}`}> {drink?.strIngredient5}</Link></b></p>
+                                    <p><b>{drink?.strMeasure7} <Link to={`/IngredientView/${(drink?.strIngredient7)}`}> {drink?.strIngredient7}</Link></b></p>
+                                    <p><b>{drink?.strMeasure9} <Link to={`/IngredientView/${(drink?.strIngredient9)}`}> {drink?.strIngredient9}</Link></b></p>
+                                    <p><b>{drink?.strMeasure11} <Link to={`/IngredientView/${(drink?.strIngredient11)}`}> {drink?.strIngredient11}</Link></b></p>
                                 </div>
                              
                             
                             </Col>
                             <Col md={4}>
                                 <div className="ingredients">
-                                    <p><b>{drink?.strMeasure2} {drink?.strIngredient2}</b></p>
+                                    <p><b>{drink?.strMeasure2} <Link to={`/IngredientView/${(drink?.strIngredient2)}`}> {drink?.strIngredient2}</Link></b></p>
                                     <p><b>{drink?.strMeasure4} {drink?.strIngredient4}</b></p>
                                     <p><b>{drink?.strMeasure6} {drink?.strIngredient6}</b></p>
                                     <p><b>{drink?.strMeasure8} {drink?.strIngredient8}</b></p>
