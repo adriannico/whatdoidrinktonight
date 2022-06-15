@@ -65,7 +65,7 @@ function Search() {
         <div className="page">
             <Container>
                 <Row>
-                    <Col md={12} sm={12}>
+                    <Col md={10}sm={10}>
                         <div>
                             <Form.Label>Name</Form.Label>
                             <Form.Control id="inputfield" placeholder="Search for a drink...  ">
@@ -76,12 +76,10 @@ function Search() {
                     
             </Row>
             <Row>
-                <Col md={12}>
+                <Col md={6}>
                     <Button value="Search!" className="btn-primary" onClick={searchForDrinks} type="button" placeholder="Search..." data="">Search</Button>
                 </Col>
-            </Row>
-            <Row>
-                <Col md={12}>
+                <Col md={6}>
                 
                     <Button className="btn-primary" value="More info" type="button" onClick={getRandomDrink}
                         >
@@ -90,6 +88,7 @@ function Search() {
                 
             </Col>
             </Row>
+          
    
             
 
