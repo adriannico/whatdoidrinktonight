@@ -20,7 +20,6 @@ function Home() {
                     <p>
                         Keep in mind that this page is a work in progess.      
                     </p>
-                  
 
                     
                 </div>
