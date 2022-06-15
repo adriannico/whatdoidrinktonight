@@ -20,13 +20,7 @@ function Home() {
                     <p>
                         Keep in mind that this page is a work in progess.      
                     </p>
-                    <h2 styles="font-weight: 800">Things that are planned:</h2>
-                    <ul>
-                        <li>Conversion from Imperial to Metric (oz to ml etc.)</li>
-                        <li>Search-function</li>
-                        <li>Better looking styling</li>
-                        
-                    </ul>
+                    
 
                     
                 </div>

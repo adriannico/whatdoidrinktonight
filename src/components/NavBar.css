@@ -2,15 +2,15 @@
   background-color: var(--primary);
   height: var(--navbar-height);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   font-size: 1.2rem;
   position: sticky;
   top: 0;
   z-index: 999;
   transition: all 0.2s ease;
   font-weight: 600;
-  padding: 10vw;
+  padding: 0px 10vw;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.150);
   margin: 0;
 }

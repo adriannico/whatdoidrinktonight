@@ -24,7 +24,7 @@ function App() {
     <Router>
       {/* <NavBar/> */}
       <Navbar bg="navbar-color">
-        <Navbar.Brand className="logo">WDIDT</Navbar.Brand>
+        <Link to="/Home"><Navbar.Brand className="logo">WDIDT</Navbar.Brand></Link>
         <Nav>
           <Link to="/Home">Home</Link>
          </Nav>
