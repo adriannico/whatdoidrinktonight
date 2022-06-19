@@ -21,8 +21,8 @@ export default function DrinkCard(props) {
         <div className="grid-item cardsection2">
          
           <p className="drinkdetails">{props.category}</p>
-          <p className="drinkdetails"><i class="fa-solid fa-skull-crossbones"></i> {props.alcoholic}   </p>
-          <p className="drinkdetails"><i class="fa-solid fa-martini-glass"></i> {props.glass}</p>
+          <p className="drinkdetails"><i class="fa-solid fa-skull-crossbones"></i> {props?.alcoholic}   </p>
+          <p className="drinkdetails"><i class="fa-solid fa-martini-glass"></i> {props?.glass}</p>
           <p id="ingredient-text">
           
 

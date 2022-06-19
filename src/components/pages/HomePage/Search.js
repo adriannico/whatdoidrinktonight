@@ -62,10 +62,12 @@ function Search() {
     }
 
     return (
+        <>
         <div className="page">
             <Container>
+            
                 <Row>
-                    <Col md={10}sm={10}>
+                    <Col md={12}sm={12}>
                         <div>
                             <Form.Label>Name</Form.Label>
                             <Form.Control id="inputfield" placeholder="Search for a drink...  ">
@@ -73,8 +75,17 @@ function Search() {
                             
                         </div>
                     </Col>
+                    {/* <Col md={2}sm={12}>
+                        <div>
+                            {/* <Form.Label>Alcoholic</Form.Label> 
+                            <Form.Check id="inputfield">
+                            </Form.Check>
+                            
+                        </div>
+                    </Col> */}
                     
             </Row>
+            
             <Row>
                 <Col md={6}>
                     <Button value="Search!" className="btn-primary" onClick={searchForDrinks} type="button" placeholder="Search..." data="">Search</Button>
@@ -115,7 +126,10 @@ function Search() {
 
             <Form>
             </Form>
-            
+        </div>
+        
+            <div className="page">
+                <h1>Results:</h1>
             <div className="results">
             { 
             
@@ -137,9 +151,11 @@ function Search() {
             }
             
             </div>
+            </div>
 
             
-        </div>
+            
+        </>
         
     )
 }
