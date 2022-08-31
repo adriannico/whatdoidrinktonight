@@ -88,7 +88,7 @@ function Search() {
             
             <Row>
                 <Col md={6}>
-                    <Button value="Search!" className="btn-primary" onClick={searchForDrinks} type="button" placeholder="Search..." data="">Search</Button>
+                    <Button value="Search!" className="btn-primary search-button" onClick={searchForDrinks} type="button" placeholder="Search..." data="">Search</Button>
                 </Col>
                 <Col md={6}>
                 
@@ -129,7 +129,7 @@ function Search() {
         </div>
         
             <div className="page">
-                <h1>Results:</h1>
+                <></>
             <div className="results">
             { 
             

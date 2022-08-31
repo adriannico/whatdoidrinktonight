@@ -31,7 +31,6 @@ Button{
 
 
 body {
-  margin: 0px;
   min-height: 100%;
   width: 100%;
   max-height: fit-content;
@@ -39,7 +38,6 @@ body {
   background: linear-gradient(180deg, rgb(220, 220, 220) 0%, rgba(252,252,252,0) 100%);
 
   color: var(--text-color);
-  margin: 0;
 
 
   font-family: "Public Sans", sans-serif !important;
